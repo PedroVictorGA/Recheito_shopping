@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!--Define o tipo de documento como HTML5 e a linguagem como português do Brasil-->
+
+<head>
+    <meta charset="UTF-8"> <!--Define a codificação de caracteres como UTF-8, suportando caracteres especiais-->
+    <title>Recreio shopping</title> <!-- Define o título da página que aparece na aba do navegador-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Configura a viewport para garantir que a página seja responsiva em dispositivos móveis-->
+    <link rel="stylesheet" href="style.css"> <!--Link para o arquivo CSS que estiliza a página-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!--Link para a biblioteca Font Awesome, que fornece ícones-->
+</head>
+
+<!--Inicio do body, o que vai ficar visivel para o usuario-->
+<body>
+    <!-- Início do cabeçalho -->
+    <div class="informacoes"> <!-- Div que vai ficar localizada na parte de cima da tela, antes de qualquer outro elemento-->
+        <h2 class="estacionamento"><span>Estacionamento gratuito</span> com vagas cobertas para mais de 3.660 veículos</h2> <!-- Div com informações sobre estacionamento, contento a observação de estacionamento gratuito-->
+    </div>
+    
+    <header class="header"> <!-- Início do cabeçalho da página-->
+        <img class="logo" src="img/logo.png" alt="Logo"> <!-- Logo da página, com um texto alternativo caso a imagem não carregue-->
+    
+        <nav class="navbar"> <!-- Início da barra de navegação-->
+            <img src="img/lupa.png" alt="Lupa" class="lupa"> <!--Ícone de lupa (busca), com texto alternativo caso a imagem não carregue-->
+            <img src="img/barraNav.png" alt="barra de navegação" class="barra"> <!-- Ícone de barra de navegação, com texto alternativo caso a imagem não carregue -->
+        </nav>
+    </header>
+    <!--Fim do cabeçalho-->
+
+    <main> <!-- Início do conteúdo principal da página -->
+        <!-- Início da seção home -->
+        <section id="home" class="home">        
+            <div class="image" style="background: url(img/home.png) no-repeat;"></div> <!-- Imagem principal da página-->
+        </section>
+        <!-- Fim da seção home -->
+    
+    
+        <section id="vitrine" class="vitrine"> 
+            <div class="content">
+                <h2 class="heading"> <span>VITRINE </span>VIRTUAL</h2> <!-- Título da seção Vitrine Virtual --> 
+    
+                <!-- Primeiro produto -->
+                <div class="card">
+                    <div class="camisa">
+                        <img class="foto" src="img/camisaPreta2.webp"/> <!--Imagem do produto-->
+                        <h3 class="titulo">Camisa Comfort em Algodão com Bolsos Frontais Preto</h3> <!--Título do produto-->
+                        <h4 class="preco">R$ 159,90</h4> <!--Preço do produto-->
+                        <h3 class="marca">Lojas Renner</h3> <!--Marca do produto-->
+                        <a href="https://www.lojasrenner.com.br/p/camisa-comfort-em-algodao-com-bolsos-frontais/-/A-560909458-br.lr?sku=582602650" class="botao-comprar">Comprar</a> <!-- Botão de compra com link -->
+                    </div>
+                </div>
+                <!-- Fim do primemiro produto-->
+    
+                <!-- Segundo produto -->
+                <div class="card">
+                    <div class="perfume">
+                        <img class="foto" src="img/calca2.webp"/> <!-- Imagem do produto -->
+                        <h3 class="titulo">Calça Reta em Alfaiataria com Cinto Cruzado Bege</h3>  <!--Título do produto-->
+                        <h4 class="preco">R$ 179,90</h4> <!--Preço do produto-->
+                        <h3 class="marca">Dondoca Moda Feminina</h3> <!--Marca do produto-->
+                        <a href="https://www.lojasrenner.com.br/p/calca-reta-em-alfaiataria-com-cinto-cruzado/-/A-914566094-br.lr?sku=914566131" class="botao-comprar">Comprar</a><!-- Botão de compra com link -->
+                    </div>
+                </div>
+                <!-- Fim do segundo produto-->
+    
+                <!-- Terceiro produto -->
+                <div class="card">
+                    <div class="perfume">
+                        <img class="foto" src="img/tenis.webp"/> <!-- Imagem do produto -->
+                        <h3 class="titulo">Tênis Street em Material Sintético com Cadarço e Recortes Branco Neve</h3> <!--Título do produto-->
+                        <h4 class="preco">R$ 189,90</h4>  <!--Preço do produto-->
+                        <h3 class="marca">Centauro</h3>
+                        <a href="https://www.lojasrenner.com.br/p/tenis-street-em-material-sintetico-com-cadarco-e-recortes/-/A-858648369-br.lr?sku=858648385" class="botao-comprar">Comprar</a> <!-- Botão de compra com link -->
+                    </div>
+                </div>
+                <!-- Fim do terceiro produto-->
+    
+                <!-- Quarto produto -->
+                <div class="card">
+                    <div class="perfume">
+                        <img class="foto" src="img/perfume.webp"/> <!-- Imagem do produto -->
+                        <h3 class="titulo">Perfume Paco Rabanne One Million Masculino Eau de Toilette 200ml</h3><!--Título do produto-->
+                        <h4 class="preco">R$ 779,90</h4>  <!--Preço do produto-->
+                        <h3 class="marca">Amazon</h3> <!--Marca do produto-->
+                        <a href="https://www.lojasrenner.com.br/p/perfume-paco-rabanne-one-million-masculino-eau-de-toilette/-/A-546593995-br.lr?sku=546594103" class="botao-comprar">Comprar</a> <!-- Botão de compra com link -->
+                    </div>
+                </div>
+                <!-- Fim do quarto produto-->
+    
+                <div class="barras">
+                    <img src="img/barraAzul.png" alt="" class="carrosel"> <!-- barra de carrosel como imagem, não funcional-->
+                </div>
+                    
+                <div class="btn-produtos">
+                    <button class="produtos">VER TODOS OS PRODUTOS</button> <!-- Botão para visualizar todos os produtos -->
+                </div>
+            </div>
+        </section>
+        <!-- Fim da seção vitrine -->
+    
+        <!-- Início da seção Lojas -->
+        <section id="lojas" class="lojas"> 
+            <h2 class="heading"><span>NOSSAS </span>LOJAS</h2> <!-- Título da seção Lojas -->
+    
+            <div class="nossas-lojas">
+                <!-- Cada loja é representada por uma caixa -->
+
+                 <!--Primeira loja-->
+                <div class="box">
+                    <div class="image">
+                        <img src="img/loja_zara.webp" alt="Zara"> <!-- Imagem da loja -->
+                    </div>
+                </div>
+                <!--Segunda loja-->
+                <div class="box">
+                    <div class="image">
+                        <img src="img/casas_bahia.jpg" alt="Casas Bahia"> <!-- Imagem da loja -->
+                    </div>
+                </div>
+                <!--Terceira loja-->
+                <div class="box">
+                    <div class="image"> 
+                        <img src="img/hiper.png" alt="Hiper"> <!-- Imagem da loja -->
+                    </div>
+                </div>
+                <!--Quarta loja-->
+                <div class="box">
+                    <div class="image"> 
+                        <img src="img/divino_fogao.jpeg" alt="Divino Fogão"> <!-- Imagem da loja -->
+                    </div>
+                </div>
+                <!--Quinta loja-->
+                <div class="box">
+                    <div class="image"> 
+                        <img src="img/farma_formula.jpeg" alt="Farma Fórmula"> <!-- Imagem da loja -->
+                    </div>
+                </div>
+                <!--Sexta loja-->
+                <div class="box">
+                    <div class="image"> 
+                        <img src="img/renner.jpg" alt="Renner"> <!-- Imagem da loja -->
+                    </div>
+                </div>
+    
+                <div class="btn-lojas">
+                    <button class="lojinhas">VER TODAS AS LOJAS</button> <!-- Botão para visualizar todas as lojas -->
+                </div>
+            </div>
+        </section>
+        <!-- Fim da seção Lojas -->
+    
+        <section id="cinema" class="cinema"> <!-- Início da seção Cinema -->
+            <h3 class="heading"><span>PROGRAMAÇÃO</span> CINEMARK</h3>  <!-- Título da seção cinema -->
+            
+            <div class="programacao">
+                <!-- Cada filme é representado por uma caixa -->
+
+                <!--Primeiro filme-->
+                <div class="filme">
+                    <img src="img/forja.webp" alt="Filme 1"> <!-- Imagem do filme -->
+                </div>
+                <!--Segundo filme-->
+                <div class="filme">
+                    <img src="img/fantasmas1.jpg" alt="Filme 2">
+                </div>
+                <!--Terceiro filme-->
+                <div class="filme">
+                    <img src="img/Onward_Poster.jpg" alt="Filme 3">
+                </div>
+                <!--Quarto filme-->
+                <div class="filme">
+                    <img src="img/Minha_Mãe_é_uma_Peça.jpg" alt="Filme 4">
+                </div>
+    
+                <div class="barras">
+                    <img src="img/barraAzul.png" alt="" class="carrosel"> <!-- barra de carrosel como imagem, não funcional-->
+                </div>
+            </div>
+        </section> <!--Fim da seção cinema-->
+    
+        <section id="gastronomia" class="gastronomia"> <!-- Início da seção Gastronomia --> 
+            <h1 class="heading">GASTRONOMIA</h1> <!-- Título da seção Gastronomia -->
+    
+            <div class="comidas">
+                <!-- Cada prato é representado por uma caixa -->
+                
+                <!--Primeiro prato-->
+                <div class="card-comida">
+                    <div class="picanha">
+                        <img class="foto" src="img/picanha1.jpg"/> <!-- Imagem do prato -->
+                        <h4 class="prato">PICANHA BOVINA</h4> <!-- Nome do prato -->
+                        <h3 class="descricao">Feijão verde, arroz de leite, macaxeira frita, farofa d água, vinagrete, macarrão, pirão de queijo. Marmitas</h3> <!-- Descrição do prato -->
+                    </div>
+                </div>
+                
+                <!--Segundo prato-->
+                <div class="card-comida">
+                    <div class="hamburguer">
+                        <img class="foto" src="img/sanduiche.jpg"/> <!-- Imagem do prato -->
+                        <h4 class="prato">SANDUICHE ARTESANAL</h4>  <!-- Nome do prato -->
+                        <h3 class="descricao">Pão artesanal de origem australiana, dois hambúrgueres artesanais, cada um pesando 120g. duplo creme de queijo cheddar, bacon e cebola caramelizada</h3> <!-- Descrição do prato -->
+                    </div>
+                </div>
+    
+                <!--Terceiro prato-->
+                <div class="card-comida">
+                    <div class="temaki">
+                        <img class="foto" src="img/temaki2.jpg"/> <!-- Imagem do prato -->
+                        <h4 class="prato">TEMAKI SALMÃO</h4>  <!-- Nome do prato -->
+                        <h3 class="descricao">Cone de alga arroz, salmão em cubos, cream cheese, cebolinha</h3> <!-- Descrição do prato -->
+                    </div>
+                </div>
+    
+                <!--Quarto prato-->
+                <div class="card-comida">
+                    <div class="pizza">
+                        <img class="foto" src="img/pizza.avif"/> <!-- Imagem do prato -->
+                        <h4 class="prato">PIZZA QUATRO QUEIJOS</h4> <!-- Nome do prato -->
+                     <h3 class="descricao">Molho de tomate, mussarela, parmesão, gorgonzola, Catupiry Original, azeitonas e orégano.</h3> <!-- Descrição do prato -->
+                    </div>
+                </div> 
+            </div>
+        </section>
+    <!-- Fim da seção Gastronomia -->
+
+        <section class="contato"> <!-- Início da seção Contato -->
+            <div class="cadastro">
+                <h2>CONTATO</h2> <!-- Título da seção Contato -->
+                <input type="text" class="nome" placeholder="Nome*"> <!-- Campo para nome -->
+                <br> <!--Quebra de linha -->
+                <input type="email" class="Email" placeholder="Email*"> <!-- Campo para email -->
+                <br>
+                <input type="text" class="Interrese" placeholder="Interesse*"> <!-- Campo para interesse -->
+                <input type="text" class="DataNascimento" placeholder="Data de nascimento*"> <!-- Campo para data de nascimento -->
+                <br>
+                <input type="text" class="mensagem" placeholder="Mensagem*"> <!-- Campo para mensagem -->
+            </div>
+        </section> 
+    <!-- Fim da seção Contato -->
+</main>
+<!-- Fim do conteúdo principal -->
+    
+
+<footer class="footer"> <!-- Início do rodapé -->
+    <div class="box-container"> <!-- Contêiner para organizar as caixas no rodapé -->
+
+        <div class="footer-logo"> <!-- Seção para o logotipo -->
+            <img src="img/logo2.png" alt="logo2"> <!-- Imagem do logotipo -->
+        </div>
+
+        <div class="box"> <!-- Caixa para links rápidos -->
+            <h3>LINKS RÁPIDOS</h3> <!-- Título da seção de links -->
+            <a class="links" href="#vitrine">VITRINE VIRTUAL</a> <!-- Link para a seção Vitrine Virtual -->
+            <a class="links" href="#lojas">NOSSAS LOJAS</a> <!-- Link para a seção Nossas Lojas -->
+            <a class="links" href="#cinema">CINEMA</a> <!-- Link para a seção Cinema -->
+            <a class="links" href="#gastronomia">GASTRONOMIA</a> <!-- Link para a seção Gastronomia -->
+        </div>
+
+        <div class="box"> <!-- Caixa para redes sociais -->
+            <h3>REDES SOCIAIS</h3> <!-- Título da seção de redes sociais -->
+            <div class="share"> <!-- Contêiner para ícones de compartilhamento -->
+                <a href="#" class="fab fa-facebook-f"></a> <!-- Ícone do Facebook -->
+                <a href="#" class="fab fa-youtube"></a> <!-- Ícone do YouTube -->
+                <a href="#" class="fab fa-instagram"></a> <!-- Ícone do Instagram -->
+            </div>
+        </div>
+
+        <div class="box"> <!-- Caixa para newsletter -->
+            <h3>NEWSLETTER</h3> <!-- Título da seção de newsletter -->
+            <p>Receba nossas novidades</p> <!-- Mensagem convidativa -->
+            <button class="btn-cadastro"> <!-- Botão para cadastro na newsletter -->
+                CADASTRAR
+            </button>
+        </div>
+    </div>
+</footer>
+    
+<script src="app.js"></script> <!-- Inclusão do arquivo JavaScript -->
+</body>
+</html>

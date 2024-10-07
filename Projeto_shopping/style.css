@@ -1,0 +1,562 @@
+    @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+
+
+/*ESTILOS GLOBAIS*/
+* { /* Aplicando as regras a todos os elementos da página*/
+    font-family: 'Nunito', sans-serif; /*definindo a fonte padrão da página como "Nunito*/
+    margin: 0; /* Removendo as margens padrão de todos os elementos, para garantir que o layout começara limpo*/
+    padding: 0; /*Removendo o preenchimemnto padrão de todos os elementos, para garantir que o layout não terá espaçamentos indesejados*/
+    box-sizing: border-box; /* Altera o modelo de caixa para que a largura e a altura dos elementos incluam o preenchimento e a borda, tornando o dimensionamento mais intuitivo e previsível*/
+    text-decoration: none; /*Apaga qualquer decoração nos textos, exemplo: linha de links*/
+    border: none; /*Remove qualquer borda padrão*/
+    transition: all 0.2s linear; /*Transition é a propriedade que ativa a animação para as mudanças de estilo, exemplo:quando você diminuiu a tela, os elementos vão ter uma leve animação para se adaptar a tela.*/     
+}
+
+html {
+    font-size: 62.5%; /* Define o tamanho da fonte base em 62.5% do tamanho padrão do navegador, facilitando o uso de unidades rem*/
+    scroll-behavior: smooth; /* Faz a rolagem suave para elementos âncora(links) da mesma página, melhorando a experiência do usuário ao navegar na página*/
+    overflow-x: hidden; /* Impede a rolagem horizontal, escondendo conteúdo que ultrapassa a largura da viewport, evitando dexar o layout desordenado*/
+}
+
+html::-webkit-scrollbar {
+    width: 1rem; /*Define a largura da barra de rolagem vertical em 1rem*/
+}
+
+html::-webkit-scrollbar-track {
+    background-color: #d3d3d3; /*Define a cor de fundo da trilha da barra de rolagem*/
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #FFB30D; /*Define a cor da barra de rolagem*/
+}
+
+body {
+    background-color: #d3d3d3; /*Define a cor de fundo do corpo da página*/
+}
+
+section {
+    padding: 5rem 9%; /*Define um espaçamento interno de 5rem na parte superior e inferior, e 9% nas laterais para os elementos <section>*/
+}
+
+.heading {
+    text-align: center; /*Alinha o texto do cabeçalho para centro*/
+    margin-bottom: 3rem; /*Adiciona um espaço de 3rem abaixo do cabeçalho*/
+    position: relative; /*Permite que elementos filhos usem posicionamento absoluto em relação a este elemento*/
+}
+
+/*FIM DOS ESTILOS GLOBAIS*/
+
+/*INICIO DO CABEÇALHO*/
+.informacoes {
+    padding: 5px; /*Adiciona um preenchimento de 5px em todos os lados do elemento com a classe informacoes*/
+    background-color: #154C82; /*Define a cor de fundo como um azul da classe "Informacoes"*/
+    position: relative; /*Permite que elementos filhos com position: absolute sejam posicionados em relação a este elemento*/
+    z-index: 1; /*Define a ordem de empilhamento do elemento; elementos com z-index maior aparecem sobre elementos com z-index menor*/
+}    
+
+.estacionamento span {
+    font-family: Arial, Helvetica, serif; /*Define as fontes para o texto que está dentro da tag <span> da classe estacionamento*/
+    font-size: 1.5rem; /*Define o tamanho da fonte como 1.5rem, relativo ao tamanho da fonte base*/
+    font-weight: 700; /*Define o peso da fonte como negrito*/
+}
+
+.informacoes h2 {
+    color: white; /*Define a cor do texto do elemento <h2> como branco*/
+    text-align: center; /*Alinha o texto do cabeçalho para o centro*/
+    padding-top: 5px; /*Adiciona um preenchimento de 5px na parte superior da tag "h2"*/
+}
+
+.header {
+    position: relative; /*Permite que elementos filhos posicionados absolutamente se posicionem em relação ao cabeçalho*/
+    top: 0; /*Define a posição superior do cabeçalho como 0, alinhando ao topo da página*/
+    left: 0; /*Define a posição esquerda do cabeçalho como 0, alinhando a esquerda da página*/
+    right: 0; /*Define a posição direita do cabeçalho como 0, ocupando toda a largura da página*/
+    display: flex; /*Usa o modelo de flexbox para layout, permitindo alinhamento e distribuição de espaço entre os itens*/
+    align-items: center; /*Alinha os itens verticalmente ao centro do cabeçalho*/
+    justify-content: space-between; /*Distribui os itens com espaço igual entre eles, colocando o primeiro à esquerda e o último à direita*/
+    padding: 0 9%; /*Adiciona um espaçamento interno de 9% nas laterais, mantendo o conteúdo centralizado*/
+    z-index: 0; /*Define a ordem de empilhamento do cabeçalho, pode ser ajustado se houver sobreposição de elementos*/
+    background: #ffffff; /*Define a cor de fundo do cabeçalho como branco*/
+}
+
+.header .logo {
+    width: 100px; /*Define a largura da logo como 100px*/
+    height: 50px; /*Define a altura da logo como 50px*/
+}
+
+.header .navbar img {
+    width: 30px; /*Define a largura das imagens dentro do navbar como 30px*/
+    height: 30px; /*Define a altura das imagens dentro do navbar como 30px*/
+}
+
+.header .navbar .lupa {
+    margin-left: 40px; /*Adiciona uma margem esquerda de 40px ao elemento com a classe "lupa"*/
+}
+
+.header .navbar .barra {
+    margin-left: 50px; /*Adiciona uma margem esquerda de 50px ao elemento com a classe "barra"*/
+}
+/*FIM DO CABEÇALHO*/
+
+/*INICIO DO HOME*/
+.home {
+    padding: 0; /*Remove qualquer preenchimento interno do elemento com a classe "home"*/
+}
+
+.home .image {
+    min-height: 90vh; /*Define a altura mínima do elemento com a classe "image" como 90% da altura da viewport*/
+    background-size: cover !important; /*Faz com que a imagem de fundo cubra completamente o elemento, ignorando outras regras de estilo se houver*/
+    background-position: center !important; /*Centraliza a imagem de fundo dentro do elemento, ignorando outras regras de estilo se houver*/
+    display: flex; /*Usa o modelo de flexbox para layout, permitindo o alinhamento de seus itens filhos*/
+    align-items: center; /*Alinha os itens filhos verticalmente ao centro do elemento*/
+}
+/*FIM DO HOME*/
+
+/*INICIO DA SESSÃO VITRINE*/
+.vitrine {
+    display: flex; /*Define um layout flexível para os elementos dentro da vitrine*/
+    align-items: center; /*Alinha os itens verticalmente ao centro*/
+    flex-wrap: wrap; /*Permite que os itens se movam para a próxima linha quando o espaço não for suficiente*/
+    gap: 8rem; /*Define um espaço de 8rem entre os itens da vitrine*/
+}
+
+.vitrine .content {
+    flex: 1 1 42rem; /*Permite que o conteúdo cresça, encolha e tenha uma largura base de 42rem*/
+}
+
+.vitrine .content span {
+    font-family: Arial, Helvetica, serif; /*Define as fontes para o texto que esta dentro da tag <span>*/
+    font-size: 2.5rem; /*Define o tamanho da fonte como 2.5rem*/
+    color: #DB812D; /*Define a cor do texto como laranja*/
+    font-weight: 700; /*Define o peso da fonte como negrito*/
+}
+
+.vitrine .content h2 {
+    font-size: 2.5rem; /*Define o tamanho da fonte do cabeçalho como 2.5rem*/
+    color: #DB812D; /*Define a cor do texto do cabeçalho como o mesmo tom laranja da tag <span.>*/
+    font-weight: 400; /*Define o peso da fonte como normal*/
+}
+
+.vitrine .content .card {
+    border: 1px solid #d3d3d3; /*Adiciona uma borda cinza clara ao redor do cartão*/
+    border-radius: 10px; /*Arredonda as bordas do cartão*/
+    background-color: rgb(249, 249, 249); /*Define a cor de fundo do cartão como um cinza muito claro*/
+    width: 251px; /*Define a largura do cartão como 251px*/
+    display: inline-flex; /*Usa um layout flexível dentro do cartão*/
+    margin: 20px; /*Adiciona uma margem de 20px ao redor do cartão*/
+}
+
+.vitrine .content .card .foto {
+    width: 249px; /*Define a largura da imagem como 249px*/
+    height: 300px; /*Define a altura da imagem como 300px*/
+    object-fit: cover; /*Faz com que a imagem cubra todo o espaço disponível, mantendo a proporção*/
+    border-radius: 3px; /*Arredonda levemente as bordas da imagem*/
+}
+
+.vitrine .content .card:hover {
+    transform: scale(1.05); /*Aumenta o tamanho do cartão em 5% ao passar o mouse por cima*/
+}
+
+.vitrine .content .card .titulo {
+    font-size: 1.2rem; /*Define o tamanho da fonte do título como 1.2rem*/
+    margin: 10px; /*Adiciona uma margem de 10px ao redor do título*/
+}
+
+.vitrine .content .card .preco {
+    font-size: 1.5rem; /*Define o tamanho da fonte do preço como 1.5rem*/
+    color: #003547; /*Define a cor do texto do preço como um azul escuro*/
+    text-align: center; /*Centraliza o texto do preço*/
+}
+
+.vitrine .content .card .marca {
+    font-size: 1.5rem; /*Define o tamanho da fonte da marca como 1.5rem*/
+    color: #DB812D; /*Define a cor do texto da marca com o tom laranja*/
+    text-align: center; /*Centraliza o texto da marca*/
+}
+
+.vitrine .content .card .botao-comprar {
+    display: block; /*Faz o botão ocupar toda a largura disponível*/
+    width: calc(100% - 20px); /*Define a largura total do botão, subtraindo margens*/
+    margin: 10px; /*Adiciona uma margem ao redor do botão*/
+    padding: 10px; /*Adiciona um preenchimento interno para o botão*/
+    background-color: #154C82; /*Define a cor de fundo do botão como azul escuro*/
+    color: white; /*Define a cor do texto do botão como branco*/
+    font-size: 1.1rem; /*Define o tamanho da fonte do botão como 1.1rem*/
+    font-weight: bold; /*Define o texto como negrito*/
+    text-align: center; /*Centraliza o texto do botão*/
+    border: none; /*Remove a borda padrão do botão*/
+    border-radius: 15px; /*Arredonda as bordas do botão*/
+    cursor: pointer; /*Muda o cursor para indicar que é clicável*/
+    transition: background-color 0.3s, transform 0.3s; /*Suaviza a animação das transições de cor e tamanho*/
+}
+
+.vitrine .content .card .botao-comprar:hover {
+    background-color: #003547; /*Escurece a cor de fundo ao passar o mouse por cima*/
+    transform: scale(1.05); /*Aumenta um pouco o tamanho do botão ao passar o mouse por cima*/
+}
+
+.vitrine .content .barras {
+    padding: 1rem; /*Adiciona um preenchimento interno de 1rem*/
+    display: flex; /*Define um layout flexível para as barras*/
+    justify-content: center; /*Centraliza os itens dentro da barra horizontalmente*/
+}
+
+.vitrine .content .barras img {
+    width: 143px; /*Define a largura da imagem na barra como 143px*/
+    height: 8px; /*Define a altura da imagem na barra como 8px*/
+}
+
+.vitrine .content .btn-produtos {
+    padding-top: 5em; /*Adiciona um espaçamento superior de 5em*/
+    display: flex; /*Define o layout como flex*/
+    justify-content: center; /*Centraliza horizontalmente os botões de produtos*/
+}
+
+.vitrine .content .btn-produtos .produtos {
+    font-size: 1.5rem; /*Define o tamanho da fonte dos produtos como 1.5rem*/
+    color: #ffffff; /*Define a cor do texto dos produtos como branca*/
+    background-color: #DB812D; /*Define a cor de fundo do botão de produtos como laranja*/
+    padding: 1rem 2rem; /*Adiciona preenchimento interno para o botão*/
+    border-radius: 15px; /*Arredonda as bordas do botão de produtos*/
+    cursor: pointer; /*Muda o cursor para indicar que ele é clicável*/
+}
+
+.vitrine .content .btn-produtos .produtos:hover {
+    transform: scale(1.05); /*Aumenta um pouco o botão ao passar o mouse*/
+}
+/*FIM DA SESSÃO VITRINE*/
+
+/*INICIO DA SESSÃO LOJA*/
+.lojas { 
+    display: block; /*Define o display como bloco, o que significa que o elemento ocupa toda a largura disponível*/
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se não houver espaço suficiente*/
+    gap: 1rem; /*Define um espaço de 1rem entre os itens*/
+    background-color: #DB812D; /* Define a cor de fundo como um tom laranja */
+}
+
+.lojas .heading {
+    font-size: 2.5rem; /* Define o tamanho da fonte do cabeçalho*/
+    font-weight: 400; /*Define o peso da fonte como normal*/
+    color: white; /*Mantém a cor do texto como branca*/
+    text-align: center; /*Centraliza o texto do cabeçalho*/
+}
+
+.lojas .heading span {
+    font-family: Arial, Helvetica, serif; /*Define a família de fontes para o texto dentro da tag <span>*/
+    font-weight: 700; /*Define o peso da fonte como negrito*/
+    font-size: 2.5rem; /*Define o tamanho da fonte do <span> como 2.5rem*/
+    color: white; /*Mantém a cor do texto como branca*/
+}
+ 
+.lojas .nossas-lojas {
+    display: grid; /*Define um layout em grade para os elementos dentro da classe "nossas-lojas"*/
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr)); /*Cria colunas responsivas com um tamanho mínimo de 32rem, ajustando conforme o espaço disponível*/
+    gap: 0.8rem; /*Define um espaço de 0.8rem entre os itens da grade*/
+}
+
+.lojas .nossas-lojas .box .image {
+    height: 30rem; /*Define a altura da área da imagem como 30rem*/
+    width: 100%; /*define a largura da área da imagem para ocupar toda a largura do espaço*/
+    overflow: hidden; /*Esconde qualquer parte da imagem que exceda a área definida*/
+}
+
+.lojas .nossas-lojas .box .image img {
+    height: 100%; /*Define a altura da imagem para preencher completamente a área da imagem*/
+    width: 100%; /*Define a largura da imagem para preencher completamente a área da imagem*/
+    object-fit: cover; /*Garante que a imagem mantenha sua proporção enquanto cobre a área disponível*/
+    border-radius: 5px; /*Arredonda as bordas da imagem*/
+}
+
+.lojas .nossas-lojas .btn-lojas {
+    padding-top: 5rem; /*Adiciona um espaço superior de 5rem*/
+    display: flex; /*Define o layout como flexível*/
+    justify-content: center; /*Centraliza os itens horizontalmente*/
+}
+
+/*Não consegui centralizar esse botão*/
+.lojas .nossas-lojas .btn-lojas .lojinhas {
+    border: 1px #d3d3d3 solid; /*Define uma borda cinza clara ao redor do botão*/
+    font-size: 1.5rem; /*Define o tamanho da fonte do botão como 1.5rem*/
+    color: #ffffff; /*Define a cor do texto do botão como branca*/
+    background-color: #DB812D; /*Define a cor de fundo do botão como laranja*/
+    padding: 1rem 2rem; /*Adiciona um preenchimento interno ao botão*/
+    border-radius: 15px; /*Arredonda as bordas do botão*/
+    cursor: pointer; /*Muda o cursor para indicar que o botão é clicável*/
+}
+
+.lojas .nossas-lojas .btn-lojas .lojinhas:hover {
+    transform: scale(1.05); /*Aumenta um pouco o botão qaundo passar o mouse*/
+}
+/*FIM DA SESSÃO LOJAS*/
+
+/*INICIO DA SESSÃO CINEMA*/
+.cinema {
+    background-color: #d3d3d3; /*Define a cor de fundo como um cinza*/
+    display: flex; /*Utiliza um layout flexível para os itens dentro da classe cinema*/
+    align-items: center; /*Centraliza os itens verticalmente*/
+    flex-wrap: wrap; /*Permite que os itens se movam para a próxima linha se não houver espaço suficiente*/
+    gap: 1rem; /*Define um espaço de 1rem entre os itens*/
+}
+
+.cinema .heading {
+    flex: 1 1 42rem; /*Permite que o cabeçalho cresça ou encolha com uma largura base de 42rem*/
+}
+
+.cinema .heading span {
+    font-family: Arial, Helvetica, serif; /*Define a família de fontes para o texto dentro do span*/
+    color: #DB812D; /*Define a cor do texto como um laranja*/
+    font-size: 2.5rem; /*Define o tamanho da fonte como 2.5rem*/
+    font-weight: 700; /*Define o peso da fonte como negrito*/
+}
+
+.cinema h3 {
+    font-size: 2.5rem; /*Define o tamanho da fonte do cabeçalho h3 como 2.5rem */
+    color: #DB812D; /*define a cor do texto do cabeçalho h3 como laranja*/
+    font-weight: 400; /*Define o peso da fonte como normal*/
+}
+
+.cinema .programacao .filme { 
+    border-radius: 10px; /*Arredonda as bordas da classe filme*/
+    width: 251px; /*Define a largura do filme como 251px*/
+    display: inline-flex; /*Utiliza um layout flexível dentro da classe filme */
+    margin: 20px; /*Adiciona uma margem de 20px ao redor da classe filme*/
+    padding-left: 2rem; /*Adiciona um preenchimento a esquerda de 2rem*/
+}
+
+.cinema .programacao .filme img {
+    width: 246.2px; /*Define a largura da imagem como 246.2px*/
+    height: 358px; /*Define a altura da imagem como 358px*/
+    object-fit: cover; /*Faz com que a imagem mantenha sua proporção e cubra toda a área disponível*/
+    border-radius: 15px; /*Arredonda as bordas da imagem*/
+}
+
+.cinema .programacao .barras {
+    padding: 1rem; /*Adiciona um preenchimento interno de 1rem*/
+    display: flex; /*Define um layout flexível para a barra*/
+    justify-content: center; /*centraliza os itens dentro da barra horizontalmente*/
+}     
+
+.cinema .programacao .barras img {
+   width: 143px; /*Define a largura da imagem na barra como 143px*/
+   height: 8px; /*Define a altura da imagem na barra como 8px*/
+}
+/*INICIO DA SESSÃO CINEMA*/
+
+/*INICIO DA SESSÃO GASTRONOMIA*/
+.gastronomia {
+    background-color: #CC2131; /*Define a cor de fundo como um tom de vermelho*/
+    display: flex; /*utiliza um layout flexível para os itens dentro da seção de gastronomia*/
+    align-items: center; /*Centraliza os itens verticalmente*/
+    flex-wrap: wrap; /*Permite que os itens se movam para a próxima linha se não houver espaço suficiente*/
+    gap: 1rem; /*Define um espaço de 1rem entre os itens*/
+}
+
+.gastronomia .heading {
+    flex: 1 1 42rem; /*Permite que o cabeçalho cresça ou encolha com uma largura base de 42rem*/
+}
+
+.gastronomia h1 {
+    font-family: Arial, Helvetica, serif; /*Define a família de fontes para o texto do cabeçalho*/
+    font-size: 2.5rem; /*Define o tamanho da fonte do cabeçalho como 2.5rem*/
+    color: #fff; /*Define a cor do texto como branco*/
+    font-weight: 700; /*Define o peso da fonte como negrito*/
+}
+
+.gastronomia .comidas .card-comida {
+    border: 1px solid #CC2131; /*Define uma borda que combina com a cor de fundo*/
+    border-radius: 10px; /*Arredonda as bordas do card*/
+    background-color: #CC2131; /*Mantém a cor de fundo do card igual à cor da seção*/
+    width: 251px; /*Define a largura do card como 251px*/
+    display: inline-flex; /*Utiliza um layout flexível dentro do card */
+    margin: 20px; /*Adiciona uma margem de 20px ao redor do card*/
+}
+
+.gastronomia .comidas .card-comida .foto {
+    width: 250px; /*Define a largura da imagem como 250px*/
+    height: 250px; /*Define a altura da imagem como 250px*/
+    object-fit: cover; /*Faz com que a imagem mantenha sua proporção enquanto cobre a área disponível*/
+    border-radius: 50%; /*Arredonda a imagem para formar um círculo*/
+}
+
+.gastronomia .comidas .card-comida .descricao {
+    font-size: 1.2rem; /*Define o tamanho da fonte da descrição como 1.2rem*/
+    margin: 10px; /* Adiciona uma margem ao redor do texto da classe "descrição"*/
+    color: white; /* Define a cor do texto da descrição como branca*/
+}
+
+.gastronomia .comidas .card-comida .prato {
+    font-size: 1.5rem; /*Aumenta o tamanho da fonte do nome da classe "prato"*/
+    text-align: center; /*Centraliza o texto da classe prato */
+    color: white; /* Define a cor do texto como branca */
+    padding-top: 1rem; /* Adiciona um espaço superior de 1rem*/
+}
+/*FIM DA SESSÃO GASTRONOMIA*/
+
+/*INICIO DA SESSÃO CONTATO*/
+.contato {
+    display: flex; /* Flexbox para centralização*/
+    justify-content: center; /*Centraliza horizontalmente*/
+    align-items: center; /*Centraliza verticalment*/
+    background-color: #d3d3d3; /*Cor de fundo clara*/
+    padding: 2rem; /*Define o espaçamento interno como 2rem*/
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /*Adiciona uma sombra sutil */
+}
+
+.contato .cadastro {
+    max-width: 100rem; /*Limita a largura máxima do formulário a 100rem*/
+    width: 50rem; /*Define a largura do formulário como 50rem*/
+    text-align: center; /*Centraliza o texto dentro do formulário*/
+}
+
+.contato .cadastro h2 {
+    color: #DB812D; /*Define a cor do título como laranja*/
+    margin-bottom: 2rem; /*Adiciona uma margem inferior de 2rem ao título*/
+    font-size: 2.5rem; /*Define o tamanho da fonte do título como 2.5rem*/
+}
+
+.contato .cadastro input {
+    width: 100%; /*Define a largura dos campos de entrada como 100% do seu contêiner*/
+    padding: 1rem; /* Adiciona um espaçamento interno de 1rem*/
+    margin-bottom: 1rem; /*Adiciona uma margem inferior de 1rem entre os campos*/
+    border: 1px solid #154CDB; /*Define uma borda de cor azul*/
+    border-radius: 5px; /*Arredonda as bordas dos campos de entrada*/
+    font-size: 1rem; /*Define o tamanho da fonte dos campos como 1rem*/
+} 
+
+.contato .cadastro input::placeholder {
+    color: #003547; /*Define a cor do texto do placeholder como um azul escuro*/
+}
+
+.contato .cadastro input:focus {
+    border-color: #003547; /*Muda a cor da borda para um tom escuro ao clicar no campo*/
+    box-shadow: 0 0 5px #003547; /*Adiciona uma sombra ao campo ao ser clicado*/
+}
+
+.contato .cadastro .mensagem {
+    padding: 15px; /*Adiciona um preenchimento interno de 15px para a classe "mensagem" */
+}
+/*FIM DA SESSÃO CONTATO*/
+
+/*INICIO DA SESSÃO FOOTER*/
+.footer  .box-container {
+    display: grid; /* Define o footer como um grid para organizar os elementos*/
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); /* Cria colunas responsivas com largura mínima de 25rem*/
+    gap: 1.5rem; /*Define um espaço de 1.5rem entre as colunas e linhas do grid*/
+    background-color: #333333; /*Define a cor de fundo do contêiner como cinza*/
+}
+
+.footer .box-container .footer-logo img {
+    width: 100px; /*Define a largura da imagem do logo como 100px*/
+    height: auto; /*Mantém a proporção da imagem*/
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.2rem; /*Define o tamanho da fonte do título das caixas como 2.2rem*/
+    color: #fff; /*Define a cor do texto como branca*/
+    padding: 1rem 1rem; /*Adiciona um padding de 1rem ao redor do título*/
+}
+
+.footer .box-container .box .links {
+    font-size: 1.5rem; /*Define o tamanho da fonte dos links como 1.5rem*/
+    display: block; /*Faz com que cada link ocupe uma linha inteira*/
+    color: #aaa; /*Define a cor dos links como um cinza claro*/
+    padding: 1rem 3rem; /*Adiciona padding de 1rem em cima e embaixo, e 3rem nas laterais*/
+}
+
+.footer .box-container .box .links:hover {
+    color: #FFB30D; /*Muda a cor dos links para laranja ao passar o mouse*/
+}
+
+.footer .box-container .box p {
+    font-size: 1.5rem; /*Define o tamanho da fonte dos parágrafos como 1.5rem*/
+    color: #aaa; /*Define a cor do texto do parágrafo como um cinza claro*/
+    padding: 0.5rem; /*Adiciona padding de 0.5rem*/
+}
+
+.footer .box-container .box p i {
+    padding-right: .5rem; /*Adiciona espaço à direita do ícone*/
+    color: #FFB30D; /*Define a cor do ícone como laranja*/
+}
+
+.footer .box-container .box .share {
+    padding: 1rem 3rem; /*Adiciona padding de 1rem em cima e embaixo, e 3rem nas laterais*/
+}
+
+.footer .box-container .box .share a {
+    height: 4.5rem; /*Define a altura dos botões de compartilhamento*/
+    width: 4.5rem; /*Define a largura dos botões de compartilhamento*/
+    line-height: 4.5rem; /*Centraliza verticalmente o texto dentro do botão*/
+    font-size: 1.7rem; /*Define o tamanho da fonte dos botões como 1.7rem*/
+    color: #fff; /*Define a cor do texto do botão como branca*/
+    background: #111; /*Define a cor de fundo do botão como um cinza escuro*/
+    border-radius: 50%; /*Arredonda o botão para criar um círculo*/
+    margin-right: .5rem; /*Adiciona uma margem à direita entre os botões*/
+    text-align: center; /*Centraliza o texto dentro do botão*/
+}
+
+.footer .box-container .box .share a:hover {
+    background: #FFB30D; /*Muda a cor de fundo do botão para laranja ao passar o mouse por cima*/
+}
+
+.footer .box-container .box form {
+    margin-left: 2rem; /*Adiciona uma margem à esquerda do formulário*/
+}
+
+.footer .box-container .box button {
+    border-radius: 15px; /*Arredonda as bordas dos campos de entrada*/
+    background-color: #FFB30D; /*Define a cor de fundo do botão como laranja*/
+    padding: 1rem; /*Define o espaço dele como 1rem*/
+    color: white; /*Define a cor da letra como branca*/
+}
+/*FIM DA SESSÃO FOOTER*/
+
+/* Responsividade */
+@media (max-width: 991px) {
+    html {
+        font-size: 55%; /* Reduz o tamanho da fonte para 55% da configuração original em telas menores que 991px*/
+        scroll-padding: 7rem; /*Define um espaço de 7rem para o scroll nas áreas com scroll suave*/
+    }
+    .header {
+        padding: 0 2rem; /*Adiciona um padding lateral de 2rem ao cabeçalho*/
+    }
+
+    .section {
+        padding: 3rem 2rem; /*Define um padding de 3rem em cima e embaixo e 2rem nas laterais nas seções.*/
+    }
+
+    .home .slide {
+        padding: 2rem 5%; /*Adiciona um padding de 2rem em cima e embaixo e 5% nas laterais ao slide da home*/
+    }
+
+    .home .slide{
+        width: 50rem; /*Define a largura do conteúdo do slide como 50rem*/
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 2rem; /*Define um padding de 2rem em todas as direções para o cabeçalho*/
+    }
+
+    .lojas .box-container .box {
+        flex-flow: column; /* Altera a direção do flex para coluna na segunda caixa da loja.*/
+    }
+
+    .home .content {
+        width: 50rem; /*Mantém a largura do conteúdo do slide como 50rem*/
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%; /*Reduz o tamanho da fonte para 50% da configuração original em telas menores que 450px*/
+    }
+}
+
+
+
+
+
+
+
+
