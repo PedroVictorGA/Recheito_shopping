@@ -1,4 +1,4 @@
-Descrição
+Descrição:
 O layout foi elaborado utilizando HTML e CSS puro, buscando atender aos requisitos solicitados.
 
 Funcionalidades:
